@@ -5,41 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HPT High Performance Training Camp</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; line-height: 1.6; }
-        header { background-color: #1a365d; color: white; padding: 3rem 1rem; text-align: center; }
-        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
-        header p { margin: 10px 0 0 0; font-size: 1.2rem; color: #90cdf4; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #222; line-height: 1.6; }
+        header { background-color: #111111; color: white; padding: 2.5rem 1rem; text-align: center; border-bottom: 5px solid #e53e3e; }
+        
+        /* Logo Styling */
+        .logo-container { margin-bottom: 1rem; }
+        .logo-img { max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: white; padding: 5px; }
+        
+        header h1 { margin: 10px 0 0 0; font-size: 2.3rem; letter-spacing: 1px; color: #ffffff; }
+        header p { margin: 8px 0 0 0; font-size: 1.2rem; color: #e53e3e; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        
         .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
         @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
-        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        h2 { color: #2b6cb0; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        
+        .card { background: white; padding: 1.8rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-top: 4px solid #1a365d; }
+        .card-accent { border-top: 4px solid #e53e3e; }
+        
+        h2 { color: #1a365d; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 0; }
         ul { padding-left: 1.2rem; }
-        li { margin-bottom: 0.5rem; }
-        .price-box { background: #ebf8ff; border-left: 4px solid #3182ce; padding: 1rem; border-radius: 4px; margin-bottom: 1rem; }
-        .price-title { font-weight: bold; color: #2b6cb0; }
-        .btn { display: block; text-align: center; padding: 15px; background-color: #e53e3e; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2rem; margin-top: 1rem; margin-bottom: 2rem; transition: background 0.2s; }
-        .btn:hover { background-color: #c53030; }
-        .form-container { position: relative; width: 100%; height: 800px; margin-top: 1.5rem; }
-        .form-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        footer { text-align: center; padding: 2rem; color: #718096; font-size: 0.9rem; }
+        li { margin-bottom: 0.6rem; }
+        
+        .price-box { background: #f0f4f8; border-left: 4px solid #1a365d; padding: 1.2rem; border-radius: 4px; margin-bottom: 1rem; }
+        .price-box-premium { background: #fff5f5; border-left: 4px solid #e53e3e; padding: 1.2rem; border-radius: 4px; margin-bottom: 1rem; }
+        .price-title { font-weight: bold; font-size: 1.1rem; color: #1a365d; }
+        .price-title-premium { font-weight: bold; font-size: 1.1rem; color: #e53e3e; }
+        
+        .btn { display: block; text-align: center; padding: 15px; background-color: #e53e3e; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2rem; margin-top: 1rem; margin-bottom: 2rem; transition: background 0.2s, transform 0.1s; box-shadow: 0 4px 6px rgba(229, 62, 62, 0.2); }
+        .btn:hover { background-color: #c53030; transform: translateY(-1px); }
+        
+        .form-container { position: relative; width: 100%; height: 850px; margin-top: 1.5rem; }
+        .form-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        footer { text-align: center; padding: 2.5rem; color: #718096; font-size: 0.9rem; background: #111; margin-top: 4rem; }
     </style>
 </head>
 <body>
 
     <header>
+        <div class="logo-container">
+            <img src="IMG_0380 (2).JPG" alt="HPT Logo" class="logo-img">
+        </div>
         <h1>HPT High Performance Training Camp</h1>
         <p>Take Your Athletic Performance to the Next Level</p>
     </header>
 
     <div class="container">
         
-        <div class="card" style="text-align: center; margin-bottom: 2rem;">
+        <div class="card card-accent" style="text-align: center; margin-bottom: 2rem;">
             <h2>Camp Details</h2>
-            <p><strong>Dates:</strong> July 6–10</p>
-            <p><strong>Time:</strong> 10:00 AM – 12:30 PM</p>
-            <p><strong>Location:</strong> Outdoor Training at Confederation Park, Aurora</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform?usp=dialog" target="_blank" class="btn" style="max-width: 300px; margin: 1rem auto 0 auto;">Register Online Now</a>
+            <p style="font-size: 1.1rem;"><strong>Dates:</strong> July 6–10</p>
+            <p style="font-size: 1.1rem;"><strong>Time:</strong> 10:00 AM – 12:30 PM</p>
+            <p style="font-size: 1.1rem;"><strong>Location:</strong> Outdoor Training at Confederation Park, Aurora</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform?usp=dialog" target="_blank" class="btn" style="max-width: 320px; margin: 1.5rem auto 0 auto;">Register Online Now</a>
         </div>
 
         <div class="grid">
@@ -57,16 +74,16 @@
                 <h2>Pricing & Packages</h2>
                 <div class="price-box">
                     <span class="price-title">Standard Camp Pass ($200)</span>
-                    <p style="margin: 5px 0 0 0;">Includes full week of high-performance outdoor training.</p>
+                    <p style="margin: 5px 0 0 0; color: #4a5568;">Includes full week of high-performance outdoor training.</p>
                 </div>
-                <div class="price-box" style="background: #f0fff4; border-left-color: #38a169;">
-                    <span class="price-title" style="color: #276749;">Camp + Recovery Package ($250)</span>
-                    <p style="margin: 5px 0 0 0;">Includes standard camp, plus daily post-camp hydrotherapy and recovery sessions in a heated salt-water pool.</p>
+                <div class="price-box-premium">
+                    <span class="price-title-premium">Camp + Recovery Package ($250)</span>
+                    <p style="margin: 5px 0 0 0; color: #4a5568;">Includes standard camp, plus daily post-camp hydrotherapy and recovery sessions in a heated salt-water pool.</p>
                 </div>
             </div>
         </div>
 
-        <div class="card" style="margin-top: 2rem;">
+        <div class="card card-accent" style="margin-top: 2rem;">
             <h2>Meet Your Head Instructor</h2>
             <p>Learn from a dedicated professional with a proven track record of developing athletic talent:</p>
             <ul>
@@ -76,9 +93,9 @@
             </ul>
         </div>
 
-        <div style="margin-top: 3rem;">
-            <h2 style="text-align: center; color: #2b6cb0;">Registration Form</h2>
-            <p style="text-align: center; color: #666;">Complete the form below to secure your spot. If it doesn't load, you can <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform?usp=dialog" target="_blank">click here to open it directly</a>.</p>
+        <div style="margin-top: 4rem;">
+            <h2 style="text-align: center; color: #1a365d;">Registration Form</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 1.5rem;">Complete the form below to secure your spot. If it doesn't load seamlessly, you can <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform?usp=dialog" target="_blank" style="color: #e53e3e; font-weight: bold;">click here to open it directly</a>.</p>
             <div class="form-container">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform?embedded=true">Loading…</iframe>
             </div>
@@ -87,7 +104,7 @@
     </div>
 
     <footer>
-        <p>&copy; HPT High Performance Training Camp. All rights reserved.</p>
+        <p>&copy; 2026 HPT High Performance Training Camp. All rights reserved.</p>
     </footer>
 
 </body>
