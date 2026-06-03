@@ -19,15 +19,18 @@
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
         @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
         
-        .card { background: white; padding: 1.8rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-top: 4px solid #1a365d; }
+        .card { background: white; padding: 1.8rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-top: 4px solid #1a365d; display: flex; flex-direction: column; justify-content: space-between; }
         .card-accent { border-top: 4px solid #e53e3e; }
         
+        /* Camp Photo Styling */
+        .camp-photo { width: 100%; height: 220px; object-fit: cover; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 1.2rem; }
+        
         h2 { color: #1a365d; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 0; }
-        ul { padding-left: 1.2rem; }
+        ul { padding-left: 1.2rem; margin-bottom: 0; }
         li { margin-bottom: 0.6rem; }
         
         .price-box { background: #f0f4f8; border-left: 4px solid #1a365d; padding: 1.2rem; border-radius: 4px; margin-bottom: 1rem; }
-        .price-box-premium { background: #fff5f5; border-left: 4px solid #e53e3e; padding: 1.2rem; border-radius: 4px; margin-bottom: 1rem; }
+        .price-box-premium { background: #fff5f5; border-left: 4px solid #e53e3e; padding: 1.2rem; border-radius: 4px; margin-bottom: 0; }
         .price-title { font-weight: bold; font-size: 1.1rem; color: #1a365d; }
         .price-title-premium { font-weight: bold; font-size: 1.1rem; color: #e53e3e; }
         
@@ -53,32 +56,38 @@
         
         <div class="card card-accent" style="text-align: center; margin-bottom: 2rem;">
             <h2>Camp Details</h2>
-            <p style="font-size: 1.1rem;"><strong>Dates:</strong> July 6–10</p>
-            <p style="font-size: 1.1rem;"><strong>Time:</strong> 10:00 AM – 12:30 PM</p>
-            <p style="font-size: 1.1rem;"><strong>Location:</strong> Outdoor Training at Confederation Park, Aurora</p>
+            <p style="font-size: 1.1rem; margin: 0.5rem 0;"><strong>Dates:</strong> July 6–10</p>
+            <p style="font-size: 1.1rem; margin: 0.5rem 0;"><strong>Time:</strong> 10:00 AM – 12:30 PM</p>
+            <p style="font-size: 1.1rem; margin: 0.5rem 0;"><strong>Location:</strong> Outdoor Training at Confederation Park, Aurora</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform?usp=dialog" target="_blank" class="btn" style="max-width: 320px; margin: 1.5rem auto 0 auto;">Register Online Now</a>
         </div>
 
         <div class="grid">
             <div class="card">
-                <h2>What We Offer</h2>
-                <p>Our program is engineered to build well-rounded, elite athletes through:</p>
-                <ul>
-                    <li><strong>Fitness & Cardio:</strong> High-energy multi-sport games.</li>
-                    <li><strong>Strength & Agility:</strong> Specialized training to boost speed and power.</li>
-                    <li><strong>Sport-Specific Training:</strong> Focused skill development for Hockey, Rugby, Soccer, and Track & Field.</li>
-                </ul>
+                <div>
+                    <img src="IMG_0381.JPG" alt="Athletic Speed Training" class="camp-photo">
+                    <h2>What We Offer</h2>
+                    <p>Our program is engineered to build well-rounded, elite athletes through:</p>
+                    <ul>
+                        <li><strong>Fitness & Cardio:</strong> High-energy multi-sport games.</li>
+                        <li><strong>Strength & Agility:</strong> Specialized training to boost speed and power.</li>
+                        <li><strong>Sport-Specific Training:</strong> Focused skill development for Hockey, Rugby, Soccer, and Track & Field.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="card">
-                <h2>Pricing & Packages</h2>
-                <div class="price-box">
-                    <span class="price-title">Standard Camp Pass ($200)</span>
-                    <p style="margin: 5px 0 0 0; color: #4a5568;">Includes full week of high-performance outdoor training.</p>
-                </div>
-                <div class="price-box-premium">
-                    <span class="price-title-premium">Camp + Recovery Package ($250)</span>
-                    <p style="margin: 5px 0 0 0; color: #4a5568;">Includes standard camp, plus daily post-camp hydrotherapy and recovery sessions in a heated salt-water pool.</p>
+                <div>
+                    <img src="IMG_0382.JPG" alt="Pool Hydrotherapy Session" class="camp-photo">
+                    <h2>Pricing & Packages</h2>
+                    <div class="price-box">
+                        <span class="price-title">Standard Camp Pass ($200)</span>
+                        <p style="margin: 5px 0 0 0; color: #4a5568;">Includes full week of high-performance outdoor training.</p>
+                    </div>
+                    <div class="price-box-premium">
+                        <span class="price-title-premium">Camp + Recovery Package ($250)</span>
+                        <p style="margin: 5px 0 0 0; color: #4a5568;">Includes standard camp, plus daily post-camp hydrotherapy and recovery sessions in a heated salt-water pool.</p>
+                    </div>
                 </div>
             </div>
         </div>
