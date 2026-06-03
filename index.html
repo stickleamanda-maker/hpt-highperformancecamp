@@ -9,19 +9,19 @@
         header { background-color: #111111; color: white; padding: 2.5rem 1rem; text-align: center; border-bottom: 5px solid #e53e3e; }
         .logo-container { margin-bottom: 1rem; }
         .logo-img { max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: white; padding: 5px; }
+        header h1 { margin: 10px 0 0 0; font-size: 2.3rem; color: #ffffff; }
         .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
         .card { background: white; padding: 1.8rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-top: 4px solid #1a365d; }
         .camp-photo { width: 100%; height: 240px; object-fit: cover; border-radius: 6px; }
         .banner-photo { width: 100%; height: 320px; object-fit: cover; border-radius: 8px; margin-top: 2rem; }
-        .btn { display: block; text-align: center; padding: 15px; background-color: #e53e3e; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 1rem; }
+        .btn { display: block; text-align: center; padding: 15px; background-color: #e53e3e; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 2rem; }
+        .form-container { margin-top: 2rem; height: 800px; }
+        iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="IMG_0380 (2).jpg" alt="HPT Logo" class="logo-img">
-        </div>
         <h1>HPT High Performance Training Camp</h1>
     </header>
 
@@ -30,7 +30,7 @@
             <div class="card">
                 <img src="pic1.jpg" alt="Training" class="camp-photo">
                 <h2>What We Offer</h2>
-                <p>Fitness, Strength, and Skill Development.</p>
+                <p>Fitness, Strength, and Skill Development for Hockey, Rugby, Soccer, and Track.</p>
             </div>
             <div class="card">
                 <img src="pic2.jpg" alt="Recovery" class="camp-photo">
@@ -38,8 +38,13 @@
                 <p>Standard and Recovery Packages available.</p>
             </div>
         </div>
+
         <img src="pic3.jpg" alt="Banner" class="banner-photo">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform" class="btn">Register Online</a>
+
+        <h2>Registration</h2>
+        <div class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform?embedded=true">Loading…</iframe>
+        </div>
     </div>
 </body>
 </html>
