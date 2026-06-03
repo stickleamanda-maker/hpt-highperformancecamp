@@ -7,7 +7,9 @@
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #222; line-height: 1.6; }
         header { background-color: #111111; color: white; padding: 2.5rem 1rem; text-align: center; border-bottom: 5px solid #e53e3e; }
-        .logo-img { max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: white; padding: 5px; margin-bottom: 1rem; }
+        .logo-container { margin-bottom: 1rem; }
+        .logo-img { max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: white; padding: 5px; }
+        header h1 { margin: 10px 0 0 0; font-size: 2.3rem; color: #ffffff; }
         .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
         .card { background: white; padding: 1.8rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-top: 4px solid #1a365d; }
@@ -21,7 +23,9 @@
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="HPT Logo" class="logo-img">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="HPT Logo" class="logo-img">
+        </div>
         <h1>HPT High Performance Training Camp</h1>
     </header>
 
