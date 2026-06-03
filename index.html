@@ -5,131 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HPT High Performance Training Camp</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #222; line-height: 1.6; }
-        header { background-color: #111111; color: white; padding: 2.5rem 1rem; text-align: center; border-bottom: 5px solid #e53e3e; }
-        
-        /* Logo Styling */
-        .logo-container { margin-bottom: 1rem; }
-        .logo-img { max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); background: white; padding: 5px; }
-        
-        header h1 { margin: 10px 0 0 0; font-size: 2.3rem; letter-spacing: 1px; color: #ffffff; }
-        header p { margin: 8px 0 0 0; font-size: 1.2rem; color: #e53e3e; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
-        
-        .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
-        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
-        
-        .card { background: white; padding: 1.8rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-top: 4px solid #1a365d; display: flex; flex-direction: column; justify-content: space-between; }
-        .card-accent { border-top: 4px solid #e53e3e; }
-        
-        /* Camp Photo Styling */
-        .camp-photo { width: 100%; height: 240px; object-fit: cover; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 1.2rem; }
-        .banner-photo { width: 100%; height: 320px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 2rem; margin-bottom: 2rem; }
-        
-        h2 { color: #1a365d; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 0; }
-        ul { padding-left: 1.2rem; margin-bottom: 0; }
-        li { margin-bottom: 0.6rem; }
-        
-        .price-box { background: #f0f4f8; border-left: 4px solid #1a365d; padding: 1.2rem; border-radius: 4px; margin-bottom: 1rem; }
-        .price-box-premium { background: #fff5f5; border-left: 4px solid #e53e3e; padding: 1.2rem; border-radius: 4px; margin-bottom: 0; }
-        .price-title { font-weight: bold; font-size: 1.1rem; color: #1a365d; }
-        .price-title-premium { font-weight: bold; font-size: 1.1rem; color: #e53e3e; }
-        
-        .btn { display: block; text-align: center; padding: 15px; background-color: #e53e3e; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2rem; margin-top: 1rem; margin-bottom: 2rem; transition: background 0.2s, transform 0.1s; box-shadow: 0 4px 6px rgba(229, 62, 62, 0.2); }
-        .btn:hover { background-color: #c53030; transform: translateY(-1px); }
-        
-        .form-container { position: relative; width: 100%; height: 850px; margin-top: 1.5rem; }
-        .form-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        footer { text-align: center; padding: 2.5rem; color: #718096; font-size: 0.9rem; background: #111; margin-top: 4rem; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f6f9; }
+        .container { max-width: 900px; margin: 2rem auto; padding: 1rem; }
+        .camp-photo { width: 100%; height: 240px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem; }
+        .banner-photo { width: 100%; height: 320px; object-fit: cover; border-radius: 8px; margin: 2rem 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
     </style>
 </head>
 <body>
-
-    <header>
-        <div class="logo-container">
-            <img src="IMG_0380%20(2).JPG" alt="HPT Logo" class="logo-img">
-        </div>
-        <h1>HPT High Performance Training Camp</h1>
-        <p>Take Your Athletic Performance to the Next Level</p>
-    </header>
-
     <div class="container">
+        <h1>HPT High Performance Training Camp</h1>
         
-        <div class="card card-accent" style="text-align: center; margin-bottom: 2rem;">
-            <h2>Camp Details</h2>
-            <p style="font-size: 1.1rem; margin: 0.5rem 0;"><strong>Dates:</strong> July 6–10</p>
-            <p style="font-size: 1.1rem; margin: 0.5rem 0;"><strong>Time:</strong> 10:00 AM – 12:30 PM</p>
-            <p style="font-size: 1.1rem; margin: 0.5rem 0;"><strong>Location:</strong> Outdoor Training at Confederation Park, Aurora</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform?usp=dialog" target="_blank" class="btn" style="max-width: 320px; margin: 1.5rem auto 0 auto;">Register Online Now</a>
-        </div>
-
         <div class="grid">
             <div class="card">
-                <div>
-                    <img src="img_0381.jpg" alt="Athletic Speed Training" class="camp-photo">
-                    <h2>What We Offer</h2>
-                    <p>Our program is engineered to build well-rounded, elite athletes through:</p>
-                    <ul>
-                        <li><strong>Fitness & Cardio:</strong> High-energy multi-sport games.</li>
-                        <li><strong>Strength & Agility:</strong> Specialized training to boost speed and power.</li>
-                        <li><strong>Sport-Specific Training:</strong> Focused skill development for Hockey, Rugby, Soccer, and Track & Field.</li>
-                    </ul>
-                </div>
+                <img src="pic1.jpg" alt="Training" class="camp-photo">
+                <h2>What We Offer</h2>
             </div>
-
             <div class="card">
-                <div>
-                    <img src="img_0382.jpg" alt="Pool Hydrotherapy Session" class="camp-photo">
-                    <h2>Pricing & Packages</h2>
-                    <div class="price-box">
-                        <span class="price-title">Standard Camp Pass ($200)</span>
-                        <p style="margin: 5px 0 0 0; color: #4a5568;">Includes full week of high-performance outdoor training.</p>
-                    </div>
-                    <div class="price-box-premium">
-                        <span class="price-title-premium">Camp + Recovery Package ($250)</span>
-                        <p style="margin: 5px 0 0 0; color: #4a5568;">Includes standard camp, plus daily post-camp hydrotherapy and recovery sessions in a heated salt-water pool.</p>
-                    </div>
-                </div>
+                <img src="pic2.jpg" alt="Recovery" class="camp-photo">
+                <h2>Pricing</h2>
             </div>
         </div>
-
-        <div class="grid" style="margin-top: 2rem;">
-            <div class="card card-accent">
-                <h2>Head Instructor</h2>
-                <p>Learn from a dedicated professional with a proven track record of developing athletic talent:</p>
-                <ul>
-                    <li>YRDSB Teacher and Coach for over 20+ years</li>
-                    <li>Level 1 Coaching Certification</li>
-                    <li>Currently coaching with the <strong>Aurora Barbarians Rugby Club</strong></li>
-                </ul>
-            </div>
-
-            <div class="card card-accent">
-                <h2>Assistant Instructors</h2>
-                <p>Our camp is supported by exceptional young leaders giving your athlete top-tier mentorship:</p>
-                <ul>
-                    <li><strong>Elite U18 Athletes:</strong> Active competitors bringing modern, high-level sports experience.</li>
-                    <li><strong>Sport-Specific Expertise:</strong> Direct skill guidance for Hockey, Rugby, Soccer, and Track & Field.</li>
-                    <li>Focused on proper form, athletic agility, and great sportsmanship.</li>
-                </ul>
-            </div>
-        </div>
-
-        <img src="img_0383.jpg" alt="High Performance Athlete Training" class="banner-photo">
-
-        <div>
-            <h2 style="text-align: center; color: #1a365d;">Registration Form</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 1.5rem;">Complete the form below to secure your spot. If it doesn't load seamlessly, you can <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform?usp=dialog" target="_blank" style="color: #e53e3e; font-weight: bold;">click here to open it directly</a>.</p>
-            <div class="form-container">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfJZBMqGL1wOuCWR0nwMXR_VeGbEYUXlk3J5ANmm3BzuMSI_w/viewform?embedded=true">Loading…</iframe>
-            </div>
-        </div>
-
+        
+        <img src="pic3.jpg" alt="Banner" class="banner-photo">
     </div>
-
-    <footer>
-        <p>&copy; 2026 HPT High Performance Training Camp. All rights reserved.</p>
-    </footer>
-
 </body>
 </html>
