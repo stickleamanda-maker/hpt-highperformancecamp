@@ -14,8 +14,9 @@
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
         .card { background: white; padding: 1.8rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-top: 4px solid #1a365d; }
         .card-accent { border-top: 4px solid #e53e3e; }
-        .camp-photo { width: 100%; height: 240px; object-fit: cover; object-position: center; border-radius: 6px; }
+        .camp-photo { width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 6px; }
         .banner-photo { width: 100%; height: 320px; object-fit: cover; object-position: center; border-radius: 8px; margin-top: 2rem; }
+        .details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: center; }
         .form-container { margin-top: 2rem; height: 1200px; }
         iframe { width: 100%; height: 100%; border: none; }
         footer { text-align: center; padding: 2rem; color: #666; }
@@ -31,15 +32,19 @@
 
     <div class="container">
         <div class="card" style="border-top: 4px solid #e53e3e; margin-bottom: 2rem;">
-            <h2>Camp Details</h2>
-            <p><strong>Date:</strong> July 6th - July 10th, 2026</p>
-            <p><strong>Time:</strong> 10:00 AM - 12:30 PM</p>
-            <p><strong>Location:</strong> Outdoor Training at Confederation Park in Aurora</p>
+            <div class="details-grid">
+                <div>
+                    <h2>Camp Details</h2>
+                    <p><strong>Date:</strong> July 6th - July 10th, 2026</p>
+                    <p><strong>Time:</strong> 10:00 AM - 12:30 PM</p>
+                    <p><strong>Location:</strong> Outdoor Training at Confederation Park in Aurora</p>
+                </div>
+                <img src="pic3.jpg" alt="Hockey Training" class="camp-photo" style="height: 180px;">
+            </div>
         </div>
 
         <div class="grid">
             <div class="card">
-                <img src="pic3.jpg" alt="Training" class="camp-photo">
                 <h2>What We Offer</h2>
                 <p>Our program focuses on explosive movement, speed and agility training, and multi-sport games and fitness. We provide elite-level conditioning and technical coaching, including sport-specific skills such as stick handling, shooting, kicking, and passing, for athletes in Hockey, Rugby, Soccer, and Track & Field.</p>
             </div>
